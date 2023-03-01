@@ -167,6 +167,26 @@
     </div>
 
     <script>
+      
+            // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyB9WG3jgX3mQHkDFLgZhKJpMcema0e_sCk",
+          authDomain: "apu-sams.firebaseapp.com",
+          databaseURL: "https://apu-sams-default-rtdb.asia-southeast1.firebasedatabase.app",
+          projectId: "apu-sams",
+          storageBucket: "apu-sams.appspot.com",
+          messagingSenderId: "1033928334103",
+          appId: "1:1033928334103:web:775a86ea7beb45f0f6f552"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      
         function openTab(evt, tabName) {
           var i, tabcontent, tablinks;
           tabcontent = document.getElementsByClassName("tabcontent");
